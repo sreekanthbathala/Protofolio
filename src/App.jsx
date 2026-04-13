@@ -18,6 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import resumePdf from "./Sreekanth__Resume_.pdf";
 
 const projects = [
   {
@@ -95,12 +96,14 @@ export default function App() {
               </a>
             ))}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                variant="outline"
-                className="rounded-full border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300"
-              >
-                Resume
-              </Button>
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300"
+                >
+                  Resume
+                </Button>
+              </a>
             </motion.div>
           </div>
 
